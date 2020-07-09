@@ -2,6 +2,6 @@
 
 ## To run emulator
 ```bash
-$ yarn <br/>
+$ yarn
 $ yarn server
 ```
