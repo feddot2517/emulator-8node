@@ -1,5 +1,5 @@
 # emulator-8node
 
-# To run emulator type 
-$ yarn 
+## To run emulator
+$ yarn <br/>
 $ yarn server
