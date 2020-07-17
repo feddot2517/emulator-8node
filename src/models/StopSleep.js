@@ -6,7 +6,8 @@ class StopSleep {
     }
 
     notify(signal, value) {
-        this.socket.emit('message', {deviceId: this.id, signal, value});
+        const date = new Date().getTime();
+        this.socket.emit('notification', {deviceId: this.id, date ,signal, value});
     }
 
     connect(socket) {

@@ -26,6 +26,12 @@ app.get('/', (req, res) => {
     if (req.query.attention) {
         stopSleepDevice.notify(3, randomInteger(30, 1000));
     }
+    if (req.query.kgrChange) {
+        stopSleepDevice.notify(1, randomInteger(30, 1000));
+    }
+    if (req.query.lowCharge) {
+        stopSleepDevice.notify(4, randomInteger(0, 50));
+    }
 });
 
 io.on('connection', (socket) => {

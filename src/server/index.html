@@ -4,8 +4,19 @@
     <title>StopSleep эмулятор</title>
 </head>
 <style>
+    body {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+    }
+
     input {
         display: none;
+    }
+
+    button {
+        margin-top: 5px;
+        width: 15%
     }
 </style>
 <body>
@@ -28,6 +39,16 @@
 <form method="get">
     <input value="1" name="attention">
     <button type="submit">Внимание</button>
+</form>
+
+<form method="get">
+    <input value="1" name="lowCharge">
+    <button type="submit">Низкий заряд батарее</button>
+</form>
+
+<form method="get">
+    <input value="1" name="kgrChange">
+    <button type="submit">Изменение кгр</button>
 </form>
 </body>
 </html>
